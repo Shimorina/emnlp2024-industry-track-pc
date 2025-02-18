@@ -1,0 +1,124 @@
+[EMNLP 2024 Industry Track] Action Required: Camera-Ready Version Modification
+
+
+Dear {{fullname}},
+
+Thank you for submitting the final version of your paper!
+
+We reviewed the paper and noticed that no correspondence email was included. We strongly recommend adding this information.
+
+Please re-submit the corrected version of the paper as soon as possible via OpenReview.
+
+Thank you!
+
+Best regards,
+
+Franck, Daniel, Anastasia
+
+EMNLP Industry Track PCs
+
+=======================================
+
+
+Dear {{fullname}},
+
+Thank you for submitting the final version of your paper!
+
+We reviewed the paper and noticed that no correspondence email was included. We strongly recommend including this information, even if you have provided a link to the project page.
+
+
+Please re-submit the corrected version of the paper as soon as possible via OpenReview.
+
+Thank you!
+
+Best regards,
+
+Franck, Daniel, Anastasia
+
+EMNLP Industry Track PCs
+
+============================
+
+Dear {{fullname}},
+
+Thank you for submitting the final version of your paper!
+
+We reviewed the paper and noticed that an email address of one author is present in the affiliations list. Please fix the latex setup so that the email appears below affiliations or in a footnote for corresponding authors. The issue concerns the same author for two submissions (#193 and #136).
+
+Please re-submit the corrected version of the paper as soon as possible via OpenReview.
+
+Thank you!
+
+Best regards,
+
+Franck, Daniel, Anastasia
+
+EMNLP Industry Track PCs
+
+
+=========================
+
+Dear {{fullname}},
+
+Thank you for submitting the final version of your paper!
+
+We checked the paper and found that the pages are numbered. 
+
+Pages should not be numbered in the final version (https://acl-org.github.io/ACLPUB/formatting.html#paper-format).
+
+Please re-submit the corrected version of the paper as soon as possible via OpenReview.
+
+Thank you!
+
+Best regards,
+
+Franck, Daniel, Anastasia
+
+EMNLP Industry Track PCs
+
+====================================
+
+Dear {{fullname}},
+
+Thank you for submitting the final version of your paper!
+
+We reviewed the paper and noticed that it uses a different font than usual ACL papers; see, for example, this one https://aclanthology.org/2024.acl-long.3v2.pdf.
+
+Please check that you are using the right template and that you didn't modify the font.
+
+ACL template: https://github.com/acl-org/acl-style-files
+
+About fonts: https://acl-org.github.io/ACLPUB/formatting.html#paper-format
+
+Please re-submit the corrected version of the paper as soon as possible via OpenReview.
+
+Thank you!
+
+Best regards,
+
+Franck, Daniel, Anastasia
+
+EMNLP Industry Track PCs
+
+
+====================================
+
+Dear {{fullname}},
+
+Thank you for submitting the final version of your paper!
+
+We reviewed the paper and noticed that it exceeds the allowed page limit (7 pages; ethical considerations, limitations, acknowledgments and references do not count against this limit).
+
+Please re-submit the corrected version of the paper within the allowed page limit as soon as possible via OpenReview.
+
+Thank you!
+
+Best regards,
+
+Franck, Daniel, Anastasia
+
+EMNLP Industry Track PCs
+
+====================================
+
+

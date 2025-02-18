@@ -1,0 +1,51 @@
+[EMNLP 2024 Industry Track] URGENT: Reviews overdue
+
+Dear {{fullname}},
+
+This is an urgent reminder that your reviews for the EMNLP 2024 Industry Track are now overdue. We need all your reviews as soon as possible.
+
+If you have already arranged with the Area Chair for a submission pretty soon, or you’re helping with an emergency review just assigned, please ignore this email and we look forward to receiving your review.
+
+For others, please let the Area Chair know TODAY when you expect to complete the remaining reviews. If, for whatever reason, your ability to fulfill your reviewer duties has been compromised, please contact them ASAP so they can find an emergency reviewer. You can use Official Comment for this notification.
+
+[How to Contact the Area Chair (AC) in OpenReview (OR)]
+To communicate through OpenReview:
+- After logging into your OR Reviewer console, click on the corresponding paper in OR
+- Click on a button labeled “Official Comment” at the top of the paper forum. This will open a message form.
+- Write your message
+- Select the intended readers for the message:
+- for messaging exclusively the area chairs, please select only “area chairs” in the “Readers” field of the form.
+- Once you’re done editing your message and have selected the readers, click the submit button.
+
+
+Please keep in mind that your timely contribution (including the notice of inability to review) is critical for the success of the conference.
+
+Thanks in advance for your help!
+
+EMNLP Industry Track Chairs
+
+
+
+Dear {{fullname}},
+
+This is an urgent reminder that your reviews for the EMNLP 2024 Industry Track are overdue. They were due on August 29. We need all your reviews as soon as possible.
+
+If you have already arranged with the Area Chair for a submission pretty soon, or you’re helping with an emergency review just assigned, please ignore this email and we look forward to receiving your review.
+
+For others, please let the Area Chair know TODAY when you expect to complete the remaining reviews. If, for whatever reason, your ability to fulfill your reviewer duties has been compromised, please contact them ASAP so they can find an emergency reviewer. You can use Official Comment for this notification.
+
+[How to Contact the Area Chair (AC) in OpenReview (OR)]
+To communicate through OpenReview:
+- After logging into your OR Reviewer console, click on the corresponding paper in OR
+- Click on a button labeled “Official Comment” at the top of the paper forum. This will open a message form.
+- Write your message
+- Select the intended readers for the message:
+- for messaging exclusively the area chairs, please select only “area chairs” in the “Readers” field of the form.
+- Once you’re done editing your message and have selected the readers, click the submit button.
+
+
+Please keep in mind that your timely contribution (including the notice of inability to review) is critical for the success of the conference.
+
+Thanks in advance for your help!
+
+EMNLP Industry Track Chairs

@@ -1,0 +1,19 @@
+[EMNLP 2024 Industry Track] Action Required: OpenReview Profiles
+
+Dear {{fullname}},
+
+We are reaching out regarding your submission #ID to the EMNLP Industry Track.
+
+The following authors currently do not have OpenReview profiles:
+* AUTHOR
+
+Please create OpenReview profiles at your earliest convenience. If the profiles have already been created, kindly ensure that the above email addresses are included in their profiles to link the paper to the authors.
+
+These profiles are necessary for generating the proceedings for the ACL Anthology (https://aclanthology.org/).
+
+Thank you for your cooperation!
+
+Best regards,
+
+EMNLP Industry Track PCs
+

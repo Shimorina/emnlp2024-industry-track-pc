@@ -1,0 +1,20 @@
+subject: [EMNLP 2024 Industry Track] Reviewer Author Discussion Period
+
+Dear {{fullname}},
+
+Thank you for submitting your reviews!
+
+The discussion period for the EMNLP Industry Track is open.
+
+Many of you have received formal author rebuttals to your reviews. We ask you to read them carefully and respond. Please participate in the discussion for all the papers you are reviewing.
+
+Please read each others' reviews as well. It is important that papers with divergent opinions be discussed thoroughly so that the ACs can make an informed decision in their meta-reviews.
+
+It is also important that reviewers take the authors' responses into consideration in revising their review. It often happens that reviewers misunderstood or under-appreciated some aspect of the paper, and the author' response can clarify those points. If that is the case, it is important to reconsider the paper in light of this new information, to determine whether the review rating should be updated. In all cases, it is good etiquette to acknowledge the authors' responses.
+
+As you revise your reviews, we would like to remind you that you are evaluating submissions for the Industry Track, which may differ from the main conference track. Our goal is to highlight submissions that provide significant practical insights and address real-world challenges, among other criteria. Please refer to the call for papers for details on the types of contributions we welcome: https://2024.emnlp.org/calls/industry_track/
+
+Thank you!
+
+Best regards,
+PC Chairs

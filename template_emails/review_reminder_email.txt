@@ -1,0 +1,42 @@
+Dear {{fullname}},
+
+Thank you for reviewing for EMNLP Industry Track!
+
+This is a gentle reminder that reviews are due on Thursday, August 29, 2024.
+
+We hope that you will try to do these early and not wait till the last minute. We remind you that we are guaranteeing that all reviews will be completed on time, so your timely contributions are crucial.
+
+Many thanks for your service!
+
+Best regards,
+EMNLP Industry Track Chairs
+========================================================
+
+Title: [EMNLP Industry Track] Reminder: Reviews due August 29th
+
+Dear {{fullname}},
+
+Thank you for reviewing for EMNLP Industry Track!
+
+This is a gentle reminder that reviews are due on Thursday, August 29, 2024. This means there are 4 days remaining for you to complete the reviews for your assigned papers.
+
+We hope that you will try to do these early and not wait till the last minute. We remind you that we are guaranteeing that all reviews will be completed on time, so your timely contributions are crucial.
+
+Many thanks for your service!
+
+Best regards,
+EMNLP Industry Track Chairs
+================================================================
+
+Title: [EMNLP Industry Track] Reminder: Reviews due TODAY, August 29th
+
+Dear {{fullname}},
+
+This is a reminder that reviews are due TODAY, Thursday, August 29, 2024.
+
+We remind you that we are guaranteeing that all reviews will be completed on time, so your timely contributions are crucial.
+
+Many thanks for your service!
+
+Best regards,
+EMNLP Industry Track Chairs

@@ -1,0 +1,17 @@
+[EMNLP 2024 Industry Track] URGENT: Ethics review overdue
+
+Dear {{fullname}},
+
+This is an urgent reminder that your ethics review for the EMNLP 2024 Industry Track is now overdue.
+
+Could you please let us know if you will be able to submit the outstanding review? The meta-review period ends on September 21, and we would like to have all ethics reviews completed by then.
+
+Thank you in advance for your response!
+
+Click on the link below to go to the ethics review page:
+
+{{submit_review_link}}
+
+Best regards,
+Franck, Daniel, Anastasia
+EMNLP Industry Track PC Chairs

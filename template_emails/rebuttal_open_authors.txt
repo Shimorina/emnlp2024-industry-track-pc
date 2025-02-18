@@ -1,0 +1,22 @@
+Subject: [EMNLP Industry Track] Rebuttal and discussion period, until 11 September
+
+
+
+Dear {{fullname}},
+
+Thank you for submitting your work to the EMNLP Industry Track!
+
+We are pleased to announce that we have received a record number of submissions this year, with 318 currently under review.
+
+The discussion period is now open and will close on September 11 at 11:59 PM Anywhere on Earth. After this time, authors will no longer be able to respond to reviewer comments, and Area Chairs will prepare their final recommendations and meta-reviews.
+
+You can view the reviews for your paper on the submission page in OpenReview at: {{forum_url}}
+
+We apologise for the fact that some papers are missing reviews; currently, 17% of submissions have less than three reviews. The Program Chairs and Area Chairs are working hard to assign emergency reviewers for these papers, and we hope to receive the outstanding reviews before the discussion period ends.
+
+Please consider submitting your rebuttals as soon as you are ready so that reviewers could participate in the discussion.
+
+We wish you a productive and insightful discussion period!
+
+The EMNLP Industry Track 2024 PCs
+

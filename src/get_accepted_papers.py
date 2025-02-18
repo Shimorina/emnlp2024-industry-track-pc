@@ -26,6 +26,7 @@ def get_accepted_info():
                 except KeyError:
                     emails.append(profile_with_emails[0].content['emails'][0])
             else:
+                print(authorid)
                 emails.append(authorid)
         submission_info[note.number] = [
             note.content.get('title')['value'],

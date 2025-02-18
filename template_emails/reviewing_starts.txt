@@ -1,0 +1,28 @@
+Dear {{fullname}},
+
+Thanks for agreeing to review for EMNLP Industry Track 2024! We are counting on your help to complete the reviewing process, which has now started.
+
+You can see your assignments here:
+https://openreview.net/group?id=EMNLP/2024/Industry_Track/Reviewers
+
+The reviewing period starts today, and will end on August 29. It’s critical that you complete all your reviews by then.
+
+We would like to remind you that all submissions should be treated as confidential.
+
+Please perform a sanity check that your assigned papers are in your area of expertise and you are comfortable with handling them well. If you want to request any changes, please get in touch with your area chair via the paper forum on OpenReview by leaving a comment addressed to the AC.
+
+[About Flagging Papers for Ethics Review]
+Please refer to the Guidelines to decide whether a paper should be flagged for Ethics review: https://aclrollingreview.org/ethics-flagging-guidelines/
+
+[How to Contact the Area Chair (AC) in OpenReview (OR)]
+To communicate through OpenReview:
+After logging into your OR Reviewer console, click on the corresponding paper in OR
+Click on a button labeled “Official Comment” at the top of the paper forum. This will open a message form.
+Write your message
+Select the intended readers for the message:
+for messaging exclusively the area chairs, please select only “area chairs” in the “Readers” field of the form.
+Once you’re done editing your message and have selected the readers, click the submit button.
+
+
+Many thanks for your support of the review process,
+EMNLP Industry Track PCs

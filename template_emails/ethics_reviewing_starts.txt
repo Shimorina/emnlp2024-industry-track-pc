@@ -1,0 +1,29 @@
+Subject: Ethics Reviewing for EMNLP Industry Track 2024
+
+Dear {{fullname}},
+
+Thanks for agreeing to review for EMNLP Industry Track 2024! We are counting on your help to complete the ethics reviewing process, which has now started.
+
+You can see your assignments here:
+https://openreview.net/group?id=EMNLP/2024/Industry_Track/Ethics_Reviewers
+
+The reviewing period starts today, and will end on September 19. It’s critical that you complete all your reviews by then.
+
+We would like to remind you that all submissions should be treated as confidential.
+
+Please perform a sanity check that you are comfortable with handling the assigned papers. If you want to request any changes, please get in touch with the PC as soon as possible via emnlp2024-industry-track@googlegroups.com
+
+Guidelines:
+
+1. Here are two relevant documents from ACL Rolling Review about ethics review: 
+https://aclrollingreview.org/ethics-flagging-guidelines/
+https://aclrollingreview.org/ethicsreviewertutorial
+
+2. You can also look at the Ethics Policy in the call for papers for the Industry Track: https://2024.emnlp.org/calls/industry_track/#ethics-policy
+
+3. Please look at the reviews provided for the paper and find the review(s) which flagged the paper for the ethics review.
+
+4. Please note that we are currently in the rebuttal period (from today until Sept 11th), so the authors may post additional comments to the provided reviews.
+
+Many thanks for your support of the ethics review process,
+EMNLP Industry Track PCs

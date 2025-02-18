@@ -1,0 +1,15 @@
+Dear {{fullname}},
+
+Thank you for reviewing for the EMNLP Industry Track!
+
+This is a gentle reminder that ethics reviews are due on Thursday, September 19, 2024.
+
+We hope that you will try to do these early and not wait till the last minute.
+
+Many thanks for your service!
+
+Best regards,
+EMNLP Industry Track Chairs
+
+
+Title: [EMNLP Industry Track] Reminder: Ethics reviews due September 19th

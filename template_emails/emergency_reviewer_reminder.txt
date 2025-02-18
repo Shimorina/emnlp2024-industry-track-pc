@@ -1,0 +1,18 @@
+Subject: EMNLP 2024 Industry Track Emergency Review
+
+Dear NAME,
+
+Thank you for signing up as an emergency reviewer for the EMNLP Industry Track!
+
+Could you please confirm that you'll be able to do an emergency review for the paper #ID?
+
+We need the review as soon as possible. The rebuttal has already started for the authors, and it will last till Sept 11th.
+
+Click on the link below to go to the official review page:
+
+{{submit_review_link}}
+
+Please reply to emnlp2024-industry-track@googlegroups.com
+
+Thank you!
+PCs

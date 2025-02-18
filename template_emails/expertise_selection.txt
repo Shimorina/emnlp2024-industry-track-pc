@@ -1,0 +1,31 @@
+Reviewers should also take care that their OpenReview profile and list of imported papers is up to date to facilitate COI detection and paper matching. Being up to date means having: links to DBLP and Semantic Scholar profiles, current affiliation, and current and past email addresses.
+
+
+Dear X,
+
+Thank you for agreeing to serve as Area Chair for the EMNLP Industry Track!
+
+Please complete the registration task as soon as possible, and no later than July 10, 2024. The task is available under the tasks tab here: https://openreview.net/group?id=EMNLP/2024/Industry_Track/Area_Chairs
+
+This task requires you to update your profile information and your papers on OpenReview. This is critical for us to properly assign papers to you.
+
+It should take no more than 5 minutes!
+
+Thank you!
+
+EMNLP Industry Track PCs
+
+
+
+ and complete the 
+
+https://openreview.net/group?id=EMNLP/2024/Industry_Track/Area_Chairs#Area_Chairs-tasks
+
+https://openreview.net/group?id=EMNLP/2024/Industry_Track/Reviewers
+
+https://openreview.net/group?id=EMNLP/2024/Industry_Track/Area_Chairs#Area_Chairs-tasks
+
+
+Please check the items below and verify that you have provided the required pieces of information in your OpenReview profile. View and edit your profile at https://openreview.net/profile
+
+Also, please add information about your expertise by going to the Reviewer console (https://openreview.net/group?id=EMNLP/2024/Industry_Track/Reviewers), clicking on the tasks tab and clicking "Expertise Selection". This information is used during the paper matching process.

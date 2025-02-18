@@ -1,0 +1,17 @@
+[EMNLP Industry Track] Reminder: Request to Complete Exit Survey
+
+Dear {{fullname}},
+
+This is a gentle reminder to complete the exit survey for the EMNLP Industry Track.
+
+If you have already submitted your feedback, thank you! If not, please log in to your author console at [OpenReview](https://openreview.net/) to rate the reviews your submission received. Your feedback is essential for improving our review process.
+
+Please remember that the quality of the review is not determined by the score assigned to your submission. A review may have a low score yet provide detailed, actionable feedback. We encourage you to assess the review text independently of the scores.
+
+To complete the survey, please visit the submission page, and for each review, click the "Author Review Rating" button. Each review can receive only one rating, so please discuss and reach a consensus within your author team. The survey will be open until 30 September, 2024, 23:59 AoE.
+
+Thank you for your participation!
+
+Best regards,
+
+EMNLP 2024 Industry Track PC Chairs
