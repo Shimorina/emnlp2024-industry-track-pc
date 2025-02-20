@@ -57,5 +57,7 @@ You can find email templates for authors, reviewers, meta-reviewers in [template
 
 ## PC Report
 
+[Slides](https://docs.google.com/presentation/d/1OYl8Bg-ZXpdzw1xM8TU1Ar4WHs5cmB0s5vpWUllWpkc/edit?usp=sharing)
+
 ## Contact
 <emnlp2024-industry-track@googlegroups.com>
