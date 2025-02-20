@@ -24,16 +24,9 @@ def send_email_reviewer_subgroup(rev_group='Reviewers'):
         # print(profile.id, len(profile.content['publications']))
         pub_number = len(profile.content['publications'])
         if pub_number < 4:
-        # if profile.id == '~Anastasia_Shimorina1':
             print(profile.id, pub_number)
             print(profile.content['preferredEmail'])
             print(profile.content['semanticScholar'])
-            # {'fullname': 'Kelly Ting Wu',
-            # 'preferred': False,
-            # 'username': '~Kelly_Ting_Wu1'},
-            # {'fullname': 'Ting Wu',
-            # 'preferred': True,
-            # 'username': '~Ting_Wu2'}],
             # look for 'preferred' name
             first_name = 'Reviewer'
             if len(profile.content['names']) == 1:
@@ -72,4 +65,5 @@ def send_email_reviewer_subgroup(rev_group='Reviewers'):
             break
 
 
-send_email_reviewer_subgroup(rev_group='Area_Chairs')
+send_email_reviewer_subgroup(rev_group='Reviewers')
+# send_email_reviewer_subgroup(rev_group='Area_Chairs')  # to see if ACs have their OR profile updated

@@ -72,6 +72,7 @@ def send_invitation(profiles, author_submission_numbers):
     for profile in profiles:
         # print(profile.id, len(profile.content['publications']))
         # print(profile.content['preferredEmail'])
+        # Examples of how names look like in OR:
         # {'fullname': 'Kelly Ting Wu',
         # 'preferred': False,
         # 'username': '~Kelly_Ting_Wu1'},

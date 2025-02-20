@@ -29,7 +29,7 @@ def write_reviews_to_csv(reviews):
     # print(content)
     keylist = list(content.keys())
 
-    with open('data/reviews.csv', 'w') as outfile:
+    with open('../data/reviews.csv', 'w') as outfile:
         csvwriter = csv.writer(outfile, delimiter=',')
         # Write header
         keylist.insert(0, 'forum')

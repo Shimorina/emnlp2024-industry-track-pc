@@ -1,2 +1,9 @@
 python-dotenv==1.0.1
 openreview-py==1.40.4
+pandas==2.2.3
+plotly==5.24.1
+scipy==1.15.2
+numpy==2.1.2
+pyyaml==6.0.2
+kaleido==0.2.1
+

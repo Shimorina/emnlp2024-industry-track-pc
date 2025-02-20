@@ -39,6 +39,5 @@ for submission in submissions:
             if f'{VENUE_ID}/{submission_name}{submission.number}/Official_Review{iterator}/-/Author_Review_Rating' in reply['invitations']:
                 ratings.append(openreview.api.Note.from_json(reply))
 
-for rating in ratings:
-    print(rating.content['review_quality']['value'])
-
+'''for rating in ratings:
+    print(rating.content['review_quality']['value'])'''

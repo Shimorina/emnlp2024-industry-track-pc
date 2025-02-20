@@ -1,23 +1,9 @@
 #  -------------------------------  Copyright ---------------------------------
 #  Software Name: <software name>
 #  Version: <version>
-#  SPDX-FileCopyrightText: Copyright (c) 2024 Orange Innovation
-#
-#  This software is confidential and proprietary information of Orange Innovation. You shall not disclose such
-#  Confidential Information and shall not copy, use or distribute it in whole or in part without the prior written
-#  consent of Orange Innovation.
-#
-#  Author: Anastasia Shimorina, Orange Innovation, DATAAI/AITT/Deskiñ
-#  Email: anastasia.shimorina@orange.com
-#  Software description: <optional: software description text>
-#  ----------------------------------------------------------------------------
-#  -------------------------------  Copyright ---------------------------------
-#  Software Name: <software name>
-#  Version: <version>
 #  Author: Anastasia Shimorina, Orange Innovation
 #  Software description: <optional: software description text>
 #  ----------------------------------------------------------------------------
-import openreview
 from openreview_client import VENUE_ID
 from openreview_client import OR_CLIENT
 import csv
@@ -37,11 +23,6 @@ def get_reviews_and_reviewers():
     all_submitted_reviewers = set()
     for submission in submissions:
         if 'flagged_for_ethics_review' in submission.content:
-            # Assigned reviewers per submission
-            submission_reviewers = OR_CLIENT.get_group(f'{VENUE_ID}/{submission_name}{submission.number}/Ethics_Reviewers')
-            # Replies
-            # sift through the replies for the official reviews (maybe useful if I want to compute interactions as well)
-            # reviews = [r for r in submission.details['directReplies'] if f'{venue_id}/{submission_name}{submission.number}/-/{review_name}' in r['invitations']]
             # direct reviews from notes
             reviews = OR_CLIENT.get_all_notes(invitation=f'{VENUE_ID}/{submission_name}{submission.number}/-/{ethics_review_name}')
             # print(f'Reviews per submission {submission.number}:', len(reviews))

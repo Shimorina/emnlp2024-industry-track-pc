@@ -26,7 +26,7 @@ def get_accepted_info():
                 except KeyError:
                     emails.append(profile_with_emails[0].content['emails'][0])
             else:
-                print(authorid)
+                print('No OR id:', authorid)
                 emails.append(authorid)
         submission_info[note.number] = [
             note.content.get('title')['value'],
@@ -37,7 +37,7 @@ def get_accepted_info():
             ', '.join(emails)
         ]
 
-    with open(f'./data/accepted-papers-{get_timestamp()}.csv', 'w') as f:
+    with open(f'../data/accepted-papers-{get_timestamp()}.csv', 'w') as f:
         writer = csv.writer(f)
         writer.writerow(['submission-id', 'title', 'abstract', 'authors', 'authorids', 'emails'])
         for k, v in sorted(submission_info.items()):
