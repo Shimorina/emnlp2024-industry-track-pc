@@ -2,6 +2,8 @@
 
 This repository contains template emails for Program Chairs (PCs) and scripts for interacting with OpenReview and calculating some conference statistics.
 
+PC Report: [slides](https://docs.google.com/presentation/d/1OYl8Bg-ZXpdzw1xM8TU1Ar4WHs5cmB0s5vpWUllWpkc/edit?usp=sharing)
+
 ## OpenReview Scripts
 
 ### Installation
