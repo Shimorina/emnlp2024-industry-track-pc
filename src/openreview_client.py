@@ -18,4 +18,4 @@ OR_CLIENT = openreview.api.OpenReviewClient(
     password=os.getenv('OPENREVIEW_PASSWORD'),
 )
 
-VENUE_ID = 'EMNLP/2024/Industry_Track'
+VENUE_ID = "EMNLP/2025/Industry_Track"

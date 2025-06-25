@@ -7,6 +7,7 @@
 import openreview
 from openreview_client import OR_CLIENT
 from openreview_client import VENUE_ID
+import argparse
 
 
 def get_reviewer_profiles(reviewer_type):
@@ -50,5 +51,16 @@ def get_reviewer_profiles(reviewer_type):
 # todo: extract reviewers: name, email, highest degree (year of earning), SS, dblp, acl anthology, gscholar, n of papers uploaded to OpenReview
 
 
-# get_reviewer_profiles(reviewer_type='Reviewers')
-# get_reviewer_profiles(reviewer_type='Area_Chairs')
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--type", type=str, default='r',help='mr for meta-reviewer')
+    args = parser.parse_args()
+
+    print('type r or mr : ',args.type)
+    if args.type=='mr':
+        get_reviewer_profiles(reviewer_type='Area_Chairs')
+    else:
+        get_reviewer_profiles(reviewer_type='Reviewers')
+            
+    
