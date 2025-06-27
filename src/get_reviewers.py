@@ -18,8 +18,10 @@ def get_reviewer_profiles(reviewer_type):
         ids_or_emails=reviewer_group.members,
         with_publications=True)
     # print(profiles[0])
+    print("Total of reviewers : ", len(profiles))
     rev_with_less_than_three_pub = 0
     for profile in profiles:
+        print(profile.id)
         content = {
           'authorids': profile.id
         }
@@ -37,10 +39,10 @@ def get_reviewer_profiles(reviewer_type):
         # publications = openreview.tools.iterget_notes(client, content=content) #, invitation='dblp.org/-/record')
         # print(publications)
             # print(profile.id, pub_number, sem_scholar_profile)
-            print(profile.id)
+        #    print(profile.id)
         # conditions to check
         # 3 recent publications (2019-2024)
-    print(rev_with_less_than_three_pub)
+    print('reviewers with less than 3 pubs : ',rev_with_less_than_three_pub)
 
 
 # 25 reviewers with 0 papers

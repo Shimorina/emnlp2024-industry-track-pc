@@ -44,7 +44,7 @@ if __name__ == "__main__":
     print('profile : ',profile.id)
     print('load : ',args.reduced_load)
     print('rtype : ',args.rtype)
-    updating_reduced_load(profile.id, args.reduced_load, args.rtype)
+    #updating_reduced_load(profile.id, args.reduced_load, args.rtype)
 
 
 
