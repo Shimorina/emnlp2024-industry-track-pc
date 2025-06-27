@@ -13,12 +13,22 @@ import argparse
 
 
 # For Reviewers
-def updating_reduced_load(rw_profile, rload):
-    client.post_edge(openreview.api.Edge(
-        invitation=venue_id+'/Reviewers/-/Custom_Max_Papers',
-        head=VENUE_ID+'/Reviewers',
-        tail='~'+rw_profile,
-        signatures=[venue_id+'/Program_Chairs'],
+def updating_reduced_load(rw_profile, rload, rtype):
+    if rtype == 'r':
+        rew="Reviewers"
+    else:
+        rew="Area_Chairs"
+
+    invitation=VENUE_ID+'/'+rew+'/-/Custom_Max_Papers'
+    head=VENUE_ID+'/'+rew
+    print("invitation : ", invitation)
+    print("head : ", head)
+        
+    OR_CLIENT.post_edge(openreview.api.Edge(
+        invitation=invitation,
+        head=head,
+        tail=rw_profile,
+        signatures=[VENUE_ID+'/Program_Chairs'],
         weight=rload
     ))
 
@@ -26,13 +36,15 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("mail", type=str)
     parser.add_argument("reduced_load", type=int , default=1)
+    parser.add_argument("rtype", type=str, default='r')
     args = parser.parse_args()
 
     print('email : ',args.mail)
     profile = openreview.tools.get_profile(OR_CLIENT,args.mail)
     print('profile : ',profile.id)
     print('load : ',args.reduced_load)
-    #updating_reduced_load(profile.id, args.reduced_load)
+    print('rtype : ',args.rtype)
+    updating_reduced_load(profile.id, args.reduced_load, args.rtype)
 
 
 
