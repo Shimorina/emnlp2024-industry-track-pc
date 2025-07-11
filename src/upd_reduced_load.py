@@ -19,8 +19,8 @@ def updating_reduced_load(rw_profile, rload, rtype):
     else:
         rew="Area_Chairs"
 
-    invitation=VENUE_ID+'/'+rew+'/-/Custom_Max_Papers'
     head=VENUE_ID+'/'+rew
+    invitation=head+'/-/Custom_Max_Papers'
     print("invitation : ", invitation)
     print("head : ", head)
         
@@ -44,7 +44,7 @@ if __name__ == "__main__":
     print('profile : ',profile.id)
     print('load : ',args.reduced_load)
     print('rtype : ',args.rtype)
-    #updating_reduced_load(profile.id, args.reduced_load, args.rtype)
+    updating_reduced_load(profile.id, args.reduced_load, args.rtype)
 
 
 
