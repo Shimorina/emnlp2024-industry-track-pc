@@ -25,6 +25,7 @@ def get_reviewer_profiles(reviewer_type):
         content = {
           'authorids': profile.id
         }
+        print(profile.content['preferredEmail'])
         # print(profile.id, len(profile.content['publications']))
         pub_number = len(profile.content['publications'])
         # check if SS is linked
