@@ -12,6 +12,7 @@ from openreview_client import OR_CLIENT
 
 def get_reviews_from_or():
     venue_group = OR_CLIENT.get_group(VENUE_ID)
+    print("venue_group content: ",venue_group.content.keys())
     submission_name = venue_group.content['submission_name']['value']
     submissions = OR_CLIENT.get_all_notes(invitation=f'{VENUE_ID}/-/{submission_name}', details='replies')
     review_name = venue_group.content['review_name']['value']

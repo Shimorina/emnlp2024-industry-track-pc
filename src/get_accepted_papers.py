@@ -12,12 +12,15 @@ from utils import get_timestamp
 
 
 def get_accepted_info():
+    print("Venue ID ", VENUE_ID)
     submissions = OR_CLIENT.get_all_notes(content={'venueid': VENUE_ID})
+    print("submissions : ", len(submissions))
     submission_info = defaultdict(list)
     for note in submissions:
         authors = note.content.get('authors')['value']
         authorids = note.content.get('authorids')['value']
         emails = []
+        print(note)
         for authorid in authorids:
             if authorid.startswith('~'):
                 profile_with_emails = OR_CLIENT.search_profiles(ids=[authorid])
@@ -25,6 +28,7 @@ def get_accepted_info():
                     emails.append(profile_with_emails[0].content['preferredEmail'])
                 except KeyError:
                     emails.append(profile_with_emails[0].content['emails'][0])
+                    print("KeyError")
             else:
                 print('No OR id:', authorid)
                 emails.append(authorid)
@@ -36,6 +40,8 @@ def get_accepted_info():
             ', '.join(authorids),
             ', '.join(emails)
         ]
+
+    print("submission length :",len(submission_info.keys()))
 
     with open(f'../data/accepted-papers-{get_timestamp()}.csv', 'w') as f:
         writer = csv.writer(f)
