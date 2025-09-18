@@ -27,10 +27,12 @@ def get_submissions():
         
         #submission_id = note.content.get('paperhash')['readers'][1].split('/')[3]
         submission_info[note.number] = [
+            note.number,
             note.content.get('title')['value'],
             ', '.join(authors),
             ', '.join(emails),
-            ', '.join(authorids)
+            ', '.join(authorids),
+            note.content.get('abstract')['value']
             # note.content.get('TLDR')['value']
         ]
     return submission_info
@@ -56,12 +58,11 @@ def write_meta_reviews_to_csv(reviews,submissions):
 
     metarw = {} 
     header = []
-    header.append("paper_id")
     for review in reviews:
         submission_id = review.invitations[0].split('/')[3]
         paper_id=int(submission_id[10:])
         metarwinfo=[]
-        header=keylist[1:]+["Title","Authors","Authors_ids"]
+        header=keylist[1:]+["Id","Title","Authors","Emails","Authors_ids","Abstract"]
         rejected=False
         for key in keylist:
             if key == 'metareview':
