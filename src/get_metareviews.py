@@ -12,12 +12,16 @@ from openreview_client import OR_CLIENT
 
 def get_submissions():
     OR_CLIENT.impersonate(VENUE_ID)
-    notes = OR_CLIENT.get_all_notes(invitation=f"{VENUE_ID}/-/Submission")
+    notes = OR_CLIENT.get_all_notes(invitation=f"{VENUE_ID}/-/Submission", details='replies')
     submission_info = {} 
     for note in notes:
         # ignore withdrawn and desk-rejected papers
         if not note.content.get('venueid')['value'] == f'{VENUE_ID}/Submission':
             continue
+
+        if len(submission_info)==0:
+            print("content : ", note.content)
+            
         authors = note.content.get('authors')['value']
         authorids = note.content.get('authorids')['value']
         #print("Authors ", authorids)
@@ -26,13 +30,25 @@ def get_submissions():
         emails = [profile.get_preferred_email() for profile in profiles]
         
         #submission_id = note.content.get('paperhash')['readers'][1].split('/')[3]
+        #get review ratings
+        # for each submission get replies that have the Rating invitation
+        reply_rating = [reply for reply in note.details["replies"] if any(invitation.endswith("/-/Official_Review") for invitation in reply['invitations'])]
+        #print("reply_rating ", reply_rating)
+        # for each rating get the reviewer that's being evaluated
+        reviewer_ratings=[]
+        for reply in reply_rating:
+            # add the rating to the reviewer_ratings list
+            reviewer_ratings.append(reply['content']['rating']['value'])
+        avg = sum(reviewer_ratings) / float(len(reviewer_ratings))
         submission_info[note.number] = [
+            avg,
             note.number,
             note.content.get('title')['value'],
             ', '.join(authors),
             ', '.join(emails),
             ', '.join(authorids),
-            note.content.get('abstract')['value']
+            note.content.get('abstract')['value'],
+            note.content.get('keywords')['value']
             # note.content.get('TLDR')['value']
         ]
     return submission_info
@@ -62,7 +78,7 @@ def write_meta_reviews_to_csv(reviews,submissions):
         submission_id = review.invitations[0].split('/')[3]
         paper_id=int(submission_id[10:])
         metarwinfo=[]
-        header=keylist[1:]+["Id","Title","Authors","Emails","Authors_ids","Abstract"]
+        header=keylist[1:]+["Score","Id","Title","Authors","Emails","Authors_ids","Abstract","Keywords"]
         rejected=False
         for key in keylist:
             if key == 'metareview':
