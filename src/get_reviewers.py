@@ -20,12 +20,14 @@ def get_reviewer_profiles(reviewer_type):
     # print(profiles[0])
     print("Total of reviewers : ", len(profiles))
     rev_with_less_than_three_pub = 0
+    #print("content: ", profiles[0].content)
     for profile in profiles:
         print(profile.id)
         content = {
           'authorids': profile.id
         }
         print(profile.content['preferredEmail'])
+        print(profile.content['history'][0]['institution'])
         # print(profile.id, len(profile.content['publications']))
         pub_number = len(profile.content['publications'])
         # check if SS is linked

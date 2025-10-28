@@ -33,13 +33,14 @@ def get_reviews_and_reviewers():
             group = OR_CLIENT.get_group(rev_signature)
             reviewer = group.members[0]
             all_submitted_reviewers.add(reviewer)
+            
+                                               #review.content['strengths']['value'],
+                                               #review.content['weaknesses']['value'],
             try:
                 reviews_with_reviewers.append([submission.number,
                                                submission.content['title']['value'],
                                                reviewer,
                                                review.content['review']['value'],
-                                               review.content['strengths']['value'],
-                                               review.content['weaknesses']['value'],
                                                review.content['rating']['value'],
                                                review.content['confidence']['value'],
                                                review.content['Needs_Ethics_Review']['value'],
@@ -51,8 +52,6 @@ def get_reviews_and_reviewers():
                                                submission.content['title']['value'],
                                                reviewer,
                                                review.content['review']['value'],
-                                               review.content['strengths']['value'],
-                                               review.content['weaknesses']['value'],
                                                review.content['rating']['value'],
                                                review.content['confidence']['value'],
                                                'None'

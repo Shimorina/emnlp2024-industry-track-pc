@@ -20,6 +20,7 @@ if __name__ == "__main__":
     profile = openreview.tools.get_profile(OR_CLIENT,args.mail)
     print('profile : ',profile.id)
     print(profile.content.keys())
+    print('history :',profile.content['history'][0]['institution']['name'])
     print('gscholar :',profile.content['gscholar'])
 
 

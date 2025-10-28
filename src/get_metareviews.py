@@ -14,13 +14,15 @@ def get_submissions():
     OR_CLIENT.impersonate(VENUE_ID)
     notes = OR_CLIENT.get_all_notes(invitation=f"{VENUE_ID}/-/Submission", details='replies')
     submission_info = {} 
+    print("len notes:",len(notes))
     for note in notes:
         # ignore withdrawn and desk-rejected papers
-        if not note.content.get('venueid')['value'] == f'{VENUE_ID}/Submission':
+        if not note.content.get('venueid')['value'] == f'{VENUE_ID}' :
+            print(f'{VENUE_ID}/Submission')
+            print("salio", note.content.get('venueid')['value'])
             continue
 
-        if len(submission_info)==0:
-            print("content : ", note.content)
+        print("content : ", note.content)
             
         authors = note.content.get('authors')['value']
         authorids = note.content.get('authorids')['value']
@@ -103,14 +105,14 @@ def write_meta_reviews_to_csv(reviews,submissions):
         if rejected:
             continue
         if paper_id not in submissions :
-            print (" WARNING Paper %d not in the submissions ", paper_id)
+            print (" WARNING Paper %d not in the submissions ",paper_id)
             continue
         metarwinfo.extend(submissions[paper_id])
         metarw[paper_id]=metarwinfo.copy()
 
 
 
-    with open('../data/meta_reviews.csv', 'w') as outfile:
+    with open('../data/meta_reviews_.csv', 'w') as outfile:
         csvwriter = csv.writer(outfile, delimiter=',')
         # Write header
         t = csvwriter.writerow(header)
@@ -121,7 +123,7 @@ def write_meta_reviews_to_csv(reviews,submissions):
 if __name__ == "__main__":
     submissions=get_submissions()
     print(type(submissions))
-    print(len(submissions.keys()))
+    print("total of submissions: ",len(submissions.keys()))
     metarws= get_meta_reviews_from_or()
     write_meta_reviews_to_csv(metarws,submissions)
-    #print(len(get_reviews_from_or()))
+    print(len(metarws))
