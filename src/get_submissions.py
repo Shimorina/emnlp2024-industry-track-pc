@@ -17,7 +17,8 @@ def get_submissions(ignore_withdrawn_deskrejected=True):
     for note in notes:
         if ignore_withdrawn_deskrejected:
             # ignore withdrawn and desk-rejected papers
-            if not note.content.get('venueid')['value'] == f'{VENUE_ID}/Submission':
+            if not note.content.get('venueid')['value'] == f'{VENUE_ID}' :
+            #if not note.content.get('venueid')['value'] == f'{VENUE_ID}/Submission':
                 continue
         authors = note.content.get('authors')['value']
         authorids = note.content.get('authorids')['value']
@@ -38,11 +39,11 @@ def get_submissions(ignore_withdrawn_deskrejected=True):
             f = client.get_attachment(note.id, 'supplementary_material')
             with open(f'../data/paper{note.number}_supplementary_material.zip', 'wb') as op:
                 op.write(f)'''
-    with open(f'../data/all-submissions-31-July-2024.csv', 'w') as f:
+    with open(f'../data/all-submissions-27-10-2025.csv', 'w') as f:
         writer = csv.writer(f)
-        writer.writerow(['submission-id', 'title', 'keywords', 'abstract', 'authors', 'authorids'])
+        writer.writerow(['Id', 'title', 'keywords', 'abstract', 'authors', 'authorids'])
         for k, v in sorted(submission_info.items()):
             writer.writerow([k, *v])
 
 
-get_submissions()
+get_submissions(False)

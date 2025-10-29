@@ -33,16 +33,16 @@ def get_reviews_and_reviewers():
             group = OR_CLIENT.get_group(rev_signature)
             reviewer = group.members[0]
             all_submitted_reviewers.add(reviewer)
+            
+                                               #review.content['strengths']['value'],
+                                               #review.content['weaknesses']['value'],
             try:
                 reviews_with_reviewers.append([submission.number,
                                                submission.content['title']['value'],
                                                reviewer,
                                                review.content['review']['value'],
-                                               review.content['strengths']['value'],
-                                               review.content['weaknesses']['value'],
                                                review.content['rating']['value'],
-                                               review.content['confidence']['value'],
-                                               review.content['Needs_Ethics_Review']['value'],
+                                               review.content['confidence']['value']
                                                ]
                                               )
             # we added the Ethics field later, so there were some reviews posted without the Ethics field
@@ -51,11 +51,8 @@ def get_reviews_and_reviewers():
                                                submission.content['title']['value'],
                                                reviewer,
                                                review.content['review']['value'],
-                                               review.content['strengths']['value'],
-                                               review.content['weaknesses']['value'],
                                                review.content['rating']['value'],
-                                               review.content['confidence']['value'],
-                                               'None'
+                                               review.content['confidence']['value']
                                                ]
                                               )
 
@@ -76,8 +73,7 @@ def get_reviews_and_reviewers():
 
     with open(f'../data/reviews-and-reviewers-{get_timestamp()}.csv', 'w') as outfile:
         csvwriter = csv.writer(outfile, delimiter=',')
-        csvwriter.writerow(['submission_id', 'title', 'reviewer', 'review', 'strengths', 'weaknesses', 'rating',
-                            'confidence', 'needs_ethics_revies'])
+        csvwriter.writerow(['submission_id', 'title', 'reviewer', 'review', 'rating', 'confidence'])
         csvwriter.writerows(reviews_with_reviewers)
 
 
